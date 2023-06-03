@@ -18,3 +18,7 @@
 *.sublime-project
 *.sublime-workspace
 *~
+
+# cscope
+cscope.*
+tags
