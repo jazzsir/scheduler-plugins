@@ -33,7 +33,7 @@ import (
 	"k8s.io/kubernetes/pkg/scheduler/framework/plugins/queuesort"
 	frameworkruntime "k8s.io/kubernetes/pkg/scheduler/framework/runtime"
 	st "k8s.io/kubernetes/pkg/scheduler/testing"
-	testutil "sigs.k8s.io/scheduler-plugins/test/util"
+	testutil "github.com/jazzsir/scheduler-plugins/test/util"
 )
 
 func TestPodState(t *testing.T) {

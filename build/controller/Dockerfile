@@ -14,14 +14,14 @@
 ARG ARCH
 FROM golang:1.15.10
 
-WORKDIR /go/src/sigs.k8s.io/scheduler-plugins
+WORKDIR /go/src/github.com/jazzsir/scheduler-plugins
 COPY . .
 ARG ARCH
 RUN make build-controller.$ARCH
 
 FROM $ARCH/alpine:3.12
 
-COPY --from=0 /go/src/sigs.k8s.io/scheduler-plugins/bin/controller /bin/controller
+COPY --from=0 /go/src/github.com/jazzsir/scheduler-plugins/bin/controller /bin/controller
 
 WORKDIR /bin
 CMD ["controller"]

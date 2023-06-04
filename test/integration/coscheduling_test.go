@@ -40,13 +40,13 @@ import (
 	testutils "k8s.io/kubernetes/test/integration/util"
 	imageutils "k8s.io/kubernetes/test/utils/image"
 
-	scheconfig "sigs.k8s.io/scheduler-plugins/pkg/apis/config"
-	"sigs.k8s.io/scheduler-plugins/pkg/apis/scheduling"
-	"sigs.k8s.io/scheduler-plugins/pkg/apis/scheduling/v1alpha1"
-	"sigs.k8s.io/scheduler-plugins/pkg/coscheduling"
-	pgclientset "sigs.k8s.io/scheduler-plugins/pkg/generated/clientset/versioned"
-	coschedulingutil "sigs.k8s.io/scheduler-plugins/pkg/util"
-	"sigs.k8s.io/scheduler-plugins/test/util"
+	scheconfig "github.com/jazzsir/scheduler-plugins/pkg/apis/config"
+	"github.com/jazzsir/scheduler-plugins/pkg/apis/scheduling"
+	"github.com/jazzsir/scheduler-plugins/pkg/apis/scheduling/v1alpha1"
+	"github.com/jazzsir/scheduler-plugins/pkg/coscheduling"
+	pgclientset "github.com/jazzsir/scheduler-plugins/pkg/generated/clientset/versioned"
+	coschedulingutil "github.com/jazzsir/scheduler-plugins/pkg/util"
+	"github.com/jazzsir/scheduler-plugins/test/util"
 )
 
 func TestCoschedulingPlugin(t *testing.T) {

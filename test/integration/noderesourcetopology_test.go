@@ -45,9 +45,9 @@ import (
 
 	topologyv1alpha1 "github.com/k8stopologyawareschedwg/noderesourcetopology-api/pkg/apis/topology/v1alpha1"
 	topologyclientset "github.com/k8stopologyawareschedwg/noderesourcetopology-api/pkg/generated/clientset/versioned"
-	scheconfig "sigs.k8s.io/scheduler-plugins/pkg/apis/config"
-	"sigs.k8s.io/scheduler-plugins/pkg/noderesourcetopology"
-	"sigs.k8s.io/scheduler-plugins/test/util"
+	scheconfig "github.com/jazzsir/scheduler-plugins/pkg/apis/config"
+	"github.com/jazzsir/scheduler-plugins/pkg/noderesourcetopology"
+	"github.com/jazzsir/scheduler-plugins/test/util"
 )
 
 const (

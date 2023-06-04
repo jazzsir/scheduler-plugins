@@ -32,8 +32,8 @@ import (
 	testutils "k8s.io/kubernetes/test/integration/util"
 	imageutils "k8s.io/kubernetes/test/utils/image"
 
-	"sigs.k8s.io/scheduler-plugins/pkg/qos"
-	"sigs.k8s.io/scheduler-plugins/test/util"
+	"github.com/jazzsir/scheduler-plugins/pkg/qos"
+	"github.com/jazzsir/scheduler-plugins/test/util"
 )
 
 func TestQOSPlugin(t *testing.T) {

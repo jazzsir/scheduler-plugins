@@ -30,12 +30,12 @@ import (
 	"k8s.io/kubernetes/pkg/scheduler/framework"
 	st "k8s.io/kubernetes/pkg/scheduler/testing"
 
-	_ "sigs.k8s.io/scheduler-plugins/pkg/apis/config/scheme"
-	"sigs.k8s.io/scheduler-plugins/pkg/coscheduling/core"
-	fakepgclientset "sigs.k8s.io/scheduler-plugins/pkg/generated/clientset/versioned/fake"
-	pgformers "sigs.k8s.io/scheduler-plugins/pkg/generated/informers/externalversions"
-	pgutil "sigs.k8s.io/scheduler-plugins/pkg/util"
-	testutil "sigs.k8s.io/scheduler-plugins/test/util"
+	_ "github.com/jazzsir/scheduler-plugins/pkg/apis/config/scheme"
+	"github.com/jazzsir/scheduler-plugins/pkg/coscheduling/core"
+	fakepgclientset "github.com/jazzsir/scheduler-plugins/pkg/generated/clientset/versioned/fake"
+	pgformers "github.com/jazzsir/scheduler-plugins/pkg/generated/informers/externalversions"
+	pgutil "github.com/jazzsir/scheduler-plugins/pkg/util"
+	testutil "github.com/jazzsir/scheduler-plugins/test/util"
 )
 
 func TestLess(t *testing.T) {

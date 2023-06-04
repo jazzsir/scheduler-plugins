@@ -32,8 +32,8 @@ import (
 	st "k8s.io/kubernetes/pkg/scheduler/testing"
 	testutils "k8s.io/kubernetes/test/integration/util"
 	imageutils "k8s.io/kubernetes/test/utils/image"
-	"sigs.k8s.io/scheduler-plugins/pkg/crossnodepreemption"
-	"sigs.k8s.io/scheduler-plugins/test/util"
+	"github.com/jazzsir/scheduler-plugins/pkg/crossnodepreemption"
+	"github.com/jazzsir/scheduler-plugins/test/util"
 )
 
 func TestCrossNodePreemptionPlugin(t *testing.T) {

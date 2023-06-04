@@ -32,11 +32,11 @@ import (
 	"k8s.io/kubernetes/pkg/scheduler/framework"
 	st "k8s.io/kubernetes/pkg/scheduler/testing"
 
-	"sigs.k8s.io/scheduler-plugins/pkg/apis/scheduling/v1alpha1"
-	fakepgclientset "sigs.k8s.io/scheduler-plugins/pkg/generated/clientset/versioned/fake"
-	pgformers "sigs.k8s.io/scheduler-plugins/pkg/generated/informers/externalversions"
-	"sigs.k8s.io/scheduler-plugins/pkg/util"
-	testutil "sigs.k8s.io/scheduler-plugins/test/util"
+	"github.com/jazzsir/scheduler-plugins/pkg/apis/scheduling/v1alpha1"
+	fakepgclientset "github.com/jazzsir/scheduler-plugins/pkg/generated/clientset/versioned/fake"
+	pgformers "github.com/jazzsir/scheduler-plugins/pkg/generated/informers/externalversions"
+	"github.com/jazzsir/scheduler-plugins/pkg/util"
+	testutil "github.com/jazzsir/scheduler-plugins/test/util"
 )
 
 func TestPreFilter(t *testing.T) {

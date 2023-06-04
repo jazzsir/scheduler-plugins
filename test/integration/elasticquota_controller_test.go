@@ -40,14 +40,14 @@ import (
 	testutil "k8s.io/kubernetes/test/integration/util"
 
 	apiextensionsclient "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset"
-	"sigs.k8s.io/scheduler-plugins/pkg/apis/scheduling"
-	"sigs.k8s.io/scheduler-plugins/pkg/apis/scheduling/v1alpha1"
-	schedv1alpha1 "sigs.k8s.io/scheduler-plugins/pkg/apis/scheduling/v1alpha1"
-	"sigs.k8s.io/scheduler-plugins/pkg/controller"
-	"sigs.k8s.io/scheduler-plugins/pkg/coscheduling"
-	schedclientset "sigs.k8s.io/scheduler-plugins/pkg/generated/clientset/versioned"
-	schedformers "sigs.k8s.io/scheduler-plugins/pkg/generated/informers/externalversions"
-	"sigs.k8s.io/scheduler-plugins/test/util"
+	"github.com/jazzsir/scheduler-plugins/pkg/apis/scheduling"
+	"github.com/jazzsir/scheduler-plugins/pkg/apis/scheduling/v1alpha1"
+	schedv1alpha1 "github.com/jazzsir/scheduler-plugins/pkg/apis/scheduling/v1alpha1"
+	"github.com/jazzsir/scheduler-plugins/pkg/controller"
+	"github.com/jazzsir/scheduler-plugins/pkg/coscheduling"
+	schedclientset "github.com/jazzsir/scheduler-plugins/pkg/generated/clientset/versioned"
+	schedformers "github.com/jazzsir/scheduler-plugins/pkg/generated/informers/externalversions"
+	"github.com/jazzsir/scheduler-plugins/test/util"
 )
 
 func TestElasticController(t *testing.T) {

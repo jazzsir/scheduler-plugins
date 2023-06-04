@@ -30,8 +30,8 @@ import (
 	st "k8s.io/kubernetes/pkg/scheduler/testing"
 	testutils "k8s.io/kubernetes/test/integration/util"
 	imageutils "k8s.io/kubernetes/test/utils/image"
-	"sigs.k8s.io/scheduler-plugins/pkg/podstate"
-	"sigs.k8s.io/scheduler-plugins/test/util"
+	"github.com/jazzsir/scheduler-plugins/pkg/podstate"
+	"github.com/jazzsir/scheduler-plugins/test/util"
 )
 
 func TestPodStatePlugin(t *testing.T) {

@@ -28,7 +28,7 @@ import (
 	conversion "k8s.io/apimachinery/pkg/conversion"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	configv1 "k8s.io/kube-scheduler/config/v1"
-	config "sigs.k8s.io/scheduler-plugins/pkg/apis/config"
+	config "github.com/jazzsir/scheduler-plugins/pkg/apis/config"
 )
 
 func init() {

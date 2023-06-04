@@ -24,17 +24,17 @@ import (
 	"k8s.io/component-base/logs"
 	"k8s.io/kubernetes/cmd/kube-scheduler/app"
 
-	"sigs.k8s.io/scheduler-plugins/pkg/capacityscheduling"
-	"sigs.k8s.io/scheduler-plugins/pkg/coscheduling"
-	"sigs.k8s.io/scheduler-plugins/pkg/crossnodepreemption"
-	"sigs.k8s.io/scheduler-plugins/pkg/noderesources"
-	"sigs.k8s.io/scheduler-plugins/pkg/noderesourcetopology"
-	"sigs.k8s.io/scheduler-plugins/pkg/podstate"
-	"sigs.k8s.io/scheduler-plugins/pkg/qos"
-	"sigs.k8s.io/scheduler-plugins/pkg/trimaran/loadvariationriskbalancing"
-	"sigs.k8s.io/scheduler-plugins/pkg/trimaran/targetloadpacking"
+	"github.com/jazzsir/scheduler-plugins/pkg/capacityscheduling"
+	"github.com/jazzsir/scheduler-plugins/pkg/coscheduling"
+	"github.com/jazzsir/scheduler-plugins/pkg/crossnodepreemption"
+	"github.com/jazzsir/scheduler-plugins/pkg/noderesources"
+	"github.com/jazzsir/scheduler-plugins/pkg/noderesourcetopology"
+	"github.com/jazzsir/scheduler-plugins/pkg/podstate"
+	"github.com/jazzsir/scheduler-plugins/pkg/qos"
+	"github.com/jazzsir/scheduler-plugins/pkg/trimaran/loadvariationriskbalancing"
+	"github.com/jazzsir/scheduler-plugins/pkg/trimaran/targetloadpacking"
 	// Ensure scheme package is initialized.
-	_ "sigs.k8s.io/scheduler-plugins/pkg/apis/config/scheme"
+	_ "github.com/jazzsir/scheduler-plugins/pkg/apis/config/scheme"
 )
 
 func main() {

@@ -38,10 +38,10 @@ import (
 	testutils "k8s.io/kubernetes/test/integration/util"
 	imageutils "k8s.io/kubernetes/test/utils/image"
 
-	"sigs.k8s.io/scheduler-plugins/pkg/apis/config"
-	"sigs.k8s.io/scheduler-plugins/pkg/apis/config/v1beta1"
-	"sigs.k8s.io/scheduler-plugins/pkg/trimaran/loadvariationriskbalancing"
-	"sigs.k8s.io/scheduler-plugins/test/util"
+	"github.com/jazzsir/scheduler-plugins/pkg/apis/config"
+	"github.com/jazzsir/scheduler-plugins/pkg/apis/config/v1beta1"
+	"github.com/jazzsir/scheduler-plugins/pkg/trimaran/loadvariationriskbalancing"
+	"github.com/jazzsir/scheduler-plugins/test/util"
 )
 
 func TestLoadVariationRiskBalancingPlugin(t *testing.T) {

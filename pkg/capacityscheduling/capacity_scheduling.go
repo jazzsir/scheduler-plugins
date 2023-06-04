@@ -44,12 +44,12 @@ import (
 	"k8s.io/kubernetes/pkg/scheduler/framework/plugins/defaultpreemption"
 	"k8s.io/kubernetes/pkg/scheduler/util"
 
-	"sigs.k8s.io/scheduler-plugins/pkg/apis/config"
-	"sigs.k8s.io/scheduler-plugins/pkg/apis/scheduling/v1alpha1"
-	"sigs.k8s.io/scheduler-plugins/pkg/generated/clientset/versioned"
-	schedinformer "sigs.k8s.io/scheduler-plugins/pkg/generated/informers/externalversions"
-	externalv1alpha1 "sigs.k8s.io/scheduler-plugins/pkg/generated/listers/scheduling/v1alpha1"
-	pluginsutil "sigs.k8s.io/scheduler-plugins/pkg/util"
+	"github.com/jazzsir/scheduler-plugins/pkg/apis/config"
+	"github.com/jazzsir/scheduler-plugins/pkg/apis/scheduling/v1alpha1"
+	"github.com/jazzsir/scheduler-plugins/pkg/generated/clientset/versioned"
+	schedinformer "github.com/jazzsir/scheduler-plugins/pkg/generated/informers/externalversions"
+	externalv1alpha1 "github.com/jazzsir/scheduler-plugins/pkg/generated/listers/scheduling/v1alpha1"
+	pluginsutil "github.com/jazzsir/scheduler-plugins/pkg/util"
 )
 
 // CapacityScheduling is a plugin that implements the mechanism of capacity scheduling.

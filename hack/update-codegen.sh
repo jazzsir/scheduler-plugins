@@ -23,15 +23,15 @@ CODEGEN_PKG=${CODEGEN_PKG:-$(cd "${SCRIPT_ROOT}"; ls -d -1 ./vendor/k8s.io/code-
 
 bash "${CODEGEN_PKG}"/generate-internal-groups.sh \
   "deepcopy,defaulter,conversion" \
-  sigs.k8s.io/scheduler-plugins/pkg/generated \
-  sigs.k8s.io/scheduler-plugins/pkg/apis \
-  sigs.k8s.io/scheduler-plugins/pkg/apis \
+  github.com/jazzsir/scheduler-plugins/pkg/generated \
+  github.com/jazzsir/scheduler-plugins/pkg/apis \
+  github.com/jazzsir/scheduler-plugins/pkg/apis \
   "config:v1beta1" \
   --go-header-file "${SCRIPT_ROOT}"/hack/boilerplate/boilerplate.generatego.txt
 
 bash "${CODEGEN_PKG}"/generate-groups.sh \
   all \
-  sigs.k8s.io/scheduler-plugins/pkg/generated \
-  sigs.k8s.io/scheduler-plugins/pkg/apis \
+  github.com/jazzsir/scheduler-plugins/pkg/generated \
+  github.com/jazzsir/scheduler-plugins/pkg/apis \
   "scheduling:v1alpha1" \
   --go-header-file "${SCRIPT_ROOT}"/hack/boilerplate/boilerplate.generatego.txt

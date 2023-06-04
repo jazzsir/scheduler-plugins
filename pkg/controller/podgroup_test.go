@@ -14,10 +14,10 @@ import (
 	"k8s.io/kubernetes/pkg/controller"
 	st "k8s.io/kubernetes/pkg/scheduler/testing"
 
-	"sigs.k8s.io/scheduler-plugins/pkg/apis/scheduling/v1alpha1"
-	pgfake "sigs.k8s.io/scheduler-plugins/pkg/generated/clientset/versioned/fake"
-	schedinformer "sigs.k8s.io/scheduler-plugins/pkg/generated/informers/externalversions"
-	"sigs.k8s.io/scheduler-plugins/pkg/util"
+	"github.com/jazzsir/scheduler-plugins/pkg/apis/scheduling/v1alpha1"
+	pgfake "github.com/jazzsir/scheduler-plugins/pkg/generated/clientset/versioned/fake"
+	schedinformer "github.com/jazzsir/scheduler-plugins/pkg/generated/informers/externalversions"
+	"github.com/jazzsir/scheduler-plugins/pkg/util"
 )
 
 func Test_Run(t *testing.T) {

@@ -33,12 +33,12 @@ import (
 	"k8s.io/kubernetes/cmd/kube-scheduler/app/options"
 	kubeschedulerconfig "k8s.io/kubernetes/pkg/scheduler/apis/config"
 
-	"sigs.k8s.io/scheduler-plugins/pkg/coscheduling"
-	"sigs.k8s.io/scheduler-plugins/pkg/noderesources"
-	"sigs.k8s.io/scheduler-plugins/pkg/podstate"
-	"sigs.k8s.io/scheduler-plugins/pkg/qos"
-	"sigs.k8s.io/scheduler-plugins/pkg/trimaran/loadvariationriskbalancing"
-	"sigs.k8s.io/scheduler-plugins/pkg/trimaran/targetloadpacking"
+	"github.com/jazzsir/scheduler-plugins/pkg/coscheduling"
+	"github.com/jazzsir/scheduler-plugins/pkg/noderesources"
+	"github.com/jazzsir/scheduler-plugins/pkg/podstate"
+	"github.com/jazzsir/scheduler-plugins/pkg/qos"
+	"github.com/jazzsir/scheduler-plugins/pkg/trimaran/loadvariationriskbalancing"
+	"github.com/jazzsir/scheduler-plugins/pkg/trimaran/targetloadpacking"
 )
 
 func TestSetup(t *testing.T) {

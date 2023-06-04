@@ -38,10 +38,10 @@ import (
 	testutils "k8s.io/kubernetes/test/integration/util"
 	imageutils "k8s.io/kubernetes/test/utils/image"
 
-	"sigs.k8s.io/scheduler-plugins/pkg/apis/config"
-	"sigs.k8s.io/scheduler-plugins/pkg/apis/config/v1beta1"
-	"sigs.k8s.io/scheduler-plugins/pkg/trimaran/targetloadpacking"
-	"sigs.k8s.io/scheduler-plugins/test/util"
+	"github.com/jazzsir/scheduler-plugins/pkg/apis/config"
+	"github.com/jazzsir/scheduler-plugins/pkg/apis/config/v1beta1"
+	"github.com/jazzsir/scheduler-plugins/pkg/trimaran/targetloadpacking"
+	"github.com/jazzsir/scheduler-plugins/test/util"
 )
 
 func TestTargetNodePackingPlugin(t *testing.T) {

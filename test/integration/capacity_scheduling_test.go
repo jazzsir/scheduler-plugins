@@ -37,12 +37,12 @@ import (
 	st "k8s.io/kubernetes/pkg/scheduler/testing"
 	testutil "k8s.io/kubernetes/test/integration/util"
 
-	schedconfig "sigs.k8s.io/scheduler-plugins/pkg/apis/config"
-	"sigs.k8s.io/scheduler-plugins/pkg/apis/scheduling"
-	"sigs.k8s.io/scheduler-plugins/pkg/apis/scheduling/v1alpha1"
-	"sigs.k8s.io/scheduler-plugins/pkg/capacityscheduling"
-	"sigs.k8s.io/scheduler-plugins/pkg/generated/clientset/versioned"
-	"sigs.k8s.io/scheduler-plugins/test/util"
+	schedconfig "github.com/jazzsir/scheduler-plugins/pkg/apis/config"
+	"github.com/jazzsir/scheduler-plugins/pkg/apis/scheduling"
+	"github.com/jazzsir/scheduler-plugins/pkg/apis/scheduling/v1alpha1"
+	"github.com/jazzsir/scheduler-plugins/pkg/capacityscheduling"
+	"github.com/jazzsir/scheduler-plugins/pkg/generated/clientset/versioned"
+	"github.com/jazzsir/scheduler-plugins/test/util"
 )
 
 const ResourceGPU v1.ResourceName = "nvidia.com/gpu"

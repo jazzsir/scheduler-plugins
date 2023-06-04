@@ -32,8 +32,8 @@ import (
 	testutils "k8s.io/kubernetes/test/integration/util"
 	imageutils "k8s.io/kubernetes/test/utils/image"
 
-	"sigs.k8s.io/scheduler-plugins/pkg/noderesources"
-	"sigs.k8s.io/scheduler-plugins/test/util"
+	"github.com/jazzsir/scheduler-plugins/pkg/noderesources"
+	"github.com/jazzsir/scheduler-plugins/test/util"
 )
 
 func TestAllocatablePlugin(t *testing.T) {
